@@ -1,6 +1,6 @@
 {
   "name": "kuberanix-backend-base",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "bin": {
     "kuberanix-backend-base": "bin/install.mjs"
   },
@@ -11,7 +11,7 @@
     "start": "NODE_ENV=production  node server.js",
     "dev": "NODE_ENV=dev  nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "git init && husky install && chmod ug+x ./.husky/*"
   },
   "lint-staged": {
     "**/*.{js,jsx,json}": [
